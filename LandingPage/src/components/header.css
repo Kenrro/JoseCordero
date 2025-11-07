@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    flex-direction: column; /* columnas: contenido arriba, nav abajo */
+    padding: 4em 3em;
+    min-height: 70vh;
+    position: relative;
+    background:
+    radial-gradient(ellipse at top left, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.5) 70%),
+    url("../assets/header169.jpg");
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat, no-repeat;
+    color: white;
+}
+.header_content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    flex: 1; /* toma todo el espacio entre padding top y nav */
+}
+.header h1 {
+    color: var(--gray100);
+}
+.header span {
+    color: var(--gray300);
+}
+.header_actions {
+    display: flex;
+    padding: 0.5em 3em;
+}
+.header_btn {
+    border: 0;
+    background-color: var(--primary);
+    padding: 0.5em 1.5em;
+    min-width: 150px;
+    max-width: 200px;
+    color: var(--gray100);
+    border-radius: 5px;
+    border: 1px solid var(--gray600);
+    transition-duration: 0.3s;
+}
+.header_btn:hover {
+    background-color: var(--primaryHover);
+    transform: scale(1.1);
+    color: var(--gray300);
+}
+.header_nav {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+}
