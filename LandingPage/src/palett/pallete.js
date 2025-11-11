@@ -2,7 +2,7 @@ export const palette = {
   primary: "#E11D48",
   primaryHover: "#FF6699",
   secondary: "#22C55E",
-
+  secondaryHover: "#4BE57E",
   gray900: "#111827",
   gray700: "#374151",
   gray600: "#4B5563",

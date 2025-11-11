@@ -1,0 +1,16 @@
+.call-to-action-btn {
+    border: 0;
+    background-color: transparent;
+    border: 2px solid var(--gray50);
+    padding: 1em 4em;
+    min-width: 150px;
+    max-width: 300px;
+    color: var(--gray100);
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+.call-to-action-btn:hover {
+    background-color: var(--primaryHover);
+    transform: scale(1.1);
+    color: var(--gray300);
+}

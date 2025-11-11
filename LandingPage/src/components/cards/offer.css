@@ -1,0 +1,79 @@
+.offer {
+
+  min-width: 220px;
+  max-width: 320px;
+  background-color: var(--gray100);
+  padding: 1.2em 2em 2em 2em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  box-shadow: 0 1px 8px rgba(34, 197, 94, 0.12);
+  gap: 20px;
+  transition: box-shadow 0.2s;
+  box-shadow: 0 4px 5px var(--secondary);
+}
+
+.offer:hover {
+  box-shadow: 0 4px 16px var(--secondary);
+}
+
+.offer__header {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+  position: relative;
+  /* Mantén lógica si deseas otros iconos, si no puedes quitar position:relative */
+}
+
+.offer i {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer__header h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--gray800);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+.offer__main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.offer__main ul {
+  padding-left: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.offer__main li {
+  list-style: square;
+  color: var(--gray600);
+  font-size: 1em;
+}
+
+.offer__main strong {
+  font-size: 1.25em;
+  color: #E11D48;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+}
+
+.offer__main footer {
+  margin-top: auto;
+  align-self: flex-end;
+}
+

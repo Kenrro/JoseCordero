@@ -1,6 +1,9 @@
+import "./footer.css"
 export const Footer = () => {
 
     return(
-        <h1>Footer</h1>
+        <footer className="footer">
+            <span>Jose Cordero © 2025. Fotógrafo profesional - Todos los derechos reservados.</span>
+        </footer>
     )
 }

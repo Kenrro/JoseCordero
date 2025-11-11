@@ -5,7 +5,6 @@
 
 .menu-header ul {
     display: flex;
-    border-radius: 16px;
     overflow: hidden;
 }
 
@@ -17,18 +16,19 @@
 }
 
 .menu_item:not(:last-child) {
-    border-right: 1px solid var(--gray50);
+    /* border-right: 1px solid var(--gray50); */
 }
 
 .menu_item:hover {
-    flex: 1.5; /* menos exagerado */
+    /* flex: 1.5; menos exagerado */
 }
 
 .menu_button {
     flex: 1;
     max-width: 100%;
     border: 0;
-    background-color: #1F293780;
+    background: none;
+    /* background-color: #1F293780; */
     color: var(--gray300);
     padding: 0.9em 2em; /* más flexible */
     border-radius: 0; /* inherits del ul */
