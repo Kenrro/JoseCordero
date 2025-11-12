@@ -1,10 +1,139 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>landingpage</title>
+    
+    <title>Fotomatch | Fotografía profesional para perfiles de citas</title>
+    <meta name="description" content="Fotomatch ofrece fotografía profesional para perfiles de citas y redes sociales. Sesiones personalizadas para mostrar tu mejor versión." />
+    
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="canonical" href="https://www.fotomatch.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Fotomatch | Fotografía profesional para perfiles de citas" />
+    <meta property="og:description" content="Sesiones de fotos personalizadas para Tinder, Bumble, Badoo y redes sociales. Muestra tu mejor versión." />
+    <meta property="og:image" content="/preview-image.jpg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.fotomatch.com/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fotomatch | Fotografía profesional para perfiles de citas" />
+    <meta name="twitter:description" content="Sesiones de fotos personalizadas para Tinder, Bumble, Badoo y redes sociales. Muestra tu mejor versión." />
+    <meta name="twitter:image" content="/preview-image.jpg" />
+
+    <!-- JSON-LD: Negocio Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Fotomatch",
+      "image": "https://www.fotomatch.com/preview-image.jpg",
+      "description": "Fotomatch ofrece fotografía profesional para perfiles de citas y redes sociales.",
+      "url": "https://www.fotomatch.com",
+      "telephone": "+34-600-000-000",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Ficticia 123",
+        "addressLocality": "Marbella",
+        "addressRegion": "Málaga",
+        "postalCode": "29600",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.5101,
+        "longitude": -4.8825
+      },
+      "sameAs": [
+        "https://www.instagram.com/fotomatch",
+        "https://www.facebook.com/fotomatch"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Sesiones Fotográficas",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sesión Básica",
+              "description": "5 fotos retocadas, análisis de fotos actuales, asesoramiento de vestuario y sesión de 1 hora en exteriores.",
+              "serviceType": "Fotografía de perfil para apps de citas"
+            },
+            "price": "140",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sesión PRO",
+              "description": "8 fotos retocadas, análisis de fotos actuales, asesoramiento de vestuario y sesión de 2 horas en exteriores.",
+              "serviceType": "Fotografía de perfil para apps de citas"
+            },
+            "price": "200",
+            "priceCurrency": "EUR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Book Personalizado",
+              "description": "12 fotos retocadas, análisis de fotos actuales, asesoramiento de vestuario y sesión de 3-4 horas en estudio y exteriores.",
+              "serviceType": "Fotografía profesional completa"
+            },
+            "price": "300",
+            "priceCurrency": "EUR"
+          }
+        ]
+      }
+    }
+    </script>
+
+    <!-- JSON-LD: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo reservo una sesión?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puedes reservar una sesión a través del formulario de contacto en el sitio web o contactando directamente con José Cordero."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo elegir la ubicación de la sesión?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, según el tipo de sesión, se pueden realizar fotos en exteriores, en tu domicilio o en estudio, dependiendo de la disponibilidad."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué incluyen las sesiones?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cada sesión incluye fotos retocadas, análisis de tus fotografías actuales, asesoramiento en vestuario y selección de las mejores fotos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hay suplementos por fines de semana o festivos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, se aplica un suplemento de 25 € por sesiones realizadas en fines de semana o días festivos."
+          }
+        }
+      ]
+    }
+    </script>
+
   </head>
   <body>
     <div id="root"></div>

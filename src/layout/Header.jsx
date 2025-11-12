@@ -1,13 +1,15 @@
 import "./header.css"
-import { HeaderMenu } from "./menus/HeaderMenu"
+import { HeaderMenu } from "../components/menus/HeaderMenu"
 import Logo from "../assets/Logo.jpg"
-import { CallToAction } from "./menus/CallToAction"
+import { CallToAction } from "../components/menus/CallToAction"
+import { Link, useLocation } from "react-router"
 export const Header = () => {
-
+    const location = useLocation().pathname
+    console.log(location)
     return(
         <header className="header">
             <nav className="header_nav">
-                <i><img src={Logo} alt="" /></i>
+                <Link to={"/"}><i><img src={Logo} alt="Logo de la web" /></i></Link>
                 <HeaderMenu></HeaderMenu>
             </nav>
             <div className="header_content">
@@ -16,7 +18,9 @@ export const Header = () => {
                     <h1>Fotografía para tu app de citas</h1>
                 </div>
                 <div className="header_actions">
-                    <CallToAction></CallToAction>
+                    {
+                        location === "/" && <CallToAction></CallToAction>
+                    }
                 </div>
             </div>
         </header>

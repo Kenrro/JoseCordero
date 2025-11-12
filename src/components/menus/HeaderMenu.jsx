@@ -5,8 +5,6 @@ export const HeaderMenu = () => {
         <div className="menu-header">
             <ul>
                 <ButtonMenu></ButtonMenu>
-                <ButtonMenu></ButtonMenu>
-                <ButtonMenu></ButtonMenu>
             </ul>
         </div>
     )
@@ -16,7 +14,7 @@ export const ButtonMenu = () => {
 
     return (
         <div className="menu_item">
-            <button className="menu_button">botton</button>
+            <a target="_blank" href="https://jose-cordero.com"><button>Mi web</button></a>
         </div>
     )
 }

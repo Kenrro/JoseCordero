@@ -1,13 +1,21 @@
 
 .main {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    /* remove align-items center to stop horizontal centering */
+    /* align-items: center; */
 }
 .main > * {
-    min-width: 350px;
-    padding: 6em 4em
+    padding: 2em 2em;
 }
+.home > * {
+    min-width: 350px;
+    padding: 6em 4em;
+    /* opcional: alinear el texto a la izquierda */
+    text-align: left;
+}
+
+
 /*  hero  */
 .main__hero {
     
@@ -21,6 +29,10 @@
 .main__hero-header {
     width: 50%;
     min-width: 300px;
+    text-align: center;
+}
+.main__hero-header h2 {
+    color: var(--primary);
 }
 .main__hero-header h3 {
     color: var(--secondary);
@@ -74,32 +86,70 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    width: 100%;
 }
+
 .portfolio__header {
     width: 50%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    text-align: center;
 }
-.portfolio__content {
-    display: flex;
-    flex-direction: row;
-    width: 50%;
-    flex-wrap: wrap;
-    gap: 4px;
-    justify-content: center;
-} 
-.portfolio__item {
-    flex: 0 0 calc(33.333% - 1rem); 
-    min-width: 200px;
-    /* flex-grow:0 / flex-shrink:0 / flex-basis:33% */
-    box-sizing: border-box;
-}
-.portfolio__item img {
-    width: 100%;
+.portfolio__header h2 {
+    color: var(--primary);
+    text-align: center;
 }
 
+.portfolio__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.portfolio__item {
+    flex: 0 0 calc(33.333% - 16px); /* 3 columnas */
+    min-width: 200px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.portfolio__item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.portfolio__item:hover img {
+    transform: scale(1.05);
+}
+
+.portfolio__item figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+.portfolio__item:hover figcaption {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* offers */
 .offers {
     display: flex;
@@ -108,10 +158,17 @@
     background-color: var(--gray50);
     gap: 32px;
     padding: 4em 2em;
+    
+    
 }
 .offers .offers__header {
-    width: 50%;
+    width: 60%;
     min-width: 350px;
+    text-align: center;
+}
+.offers .offers__header h2{
+    text-align: center;
+    color: var(--primary);
 }
 .offers .offers__content {
     display: flex;
@@ -126,8 +183,9 @@
     flex-direction: row;
     gap: 8px;
     flex-wrap: wrap;
-    width: 50%;
+    width: 60%;
     min-width: 350px;
+    text-align: center;
 }
 .offers .offers__footer {
     display: flex;
